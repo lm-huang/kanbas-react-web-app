@@ -1,0 +1,413 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Courses</title>
+    <link
+      href="../../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../vendors/fontawesome/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="../../index.css" rel="stylesheet" />
+  </head>
+
+  <!-- Kanbas Navigation SideBar -->
+  <div class="list-group kanbas-sidebar kanbas-column">
+    <a class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+      <div class="kanbas-sidebar-text kanbas-sidebar-logo">
+        <img
+          src="https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-6-white.svg"
+          width="180px"
+        />
+      </div>
+    </a>
+    <a
+      href="../../Account/Profile/screen.html"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-user-circle kanbas-gray kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Account</div>
+    </a>
+    <a
+      href="../../Dashboard/dashboard.html"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-clock kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Dashboard</div>
+    </a>
+    <a
+      href="../../Courses/Home/screen.html"
+      class="list-group-item kanbas-sidebar-selected kanbas-icon-padding"
+    >
+      <i class="fa fa-book kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Courses</div>
+    </a>
+    <a
+      href="#"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-calendar-plus kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Calendar</div>
+    </a>
+    <a
+      href="#"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-stopwatch kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">History</div>
+    </a>
+    <a
+      href="#"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-question-circle kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Help</div>
+    </a>
+  </div>
+
+    <!-- COURSE NAVIGATION COLUMN -->
+    <div class="list-group kanbas-account kanbas-column">
+      <a
+        href="../Home/screen.html"
+        class="list-group-item kanbas-black kanbas-account-border"
+      >
+        <div class="kanbas-account-selected">Home</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Modules</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Piazza</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Zoom Meetings</div>
+      </a>
+      <a
+        href="../Assignments/screen.html"
+        class="list-group-item kanbas-red kanbas-account-border"
+      >
+        <div>Assignments</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Quizzes</div>
+      </a>
+      <a
+        href="../Grades/index.html"
+        class="list-group-item kanbas-red kanbas-account-border"
+      >
+        <div>Grades</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>People</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Settings</div>
+      </a>
+    </div>
+
+    <!-- COURSE MODULE COLUMN -->
+    <div class="kanbas-column">
+      <h4>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" class="kanbas-hyperlink">CS5610</a>
+            </li>
+            <li class="breadcrumb-item active">Home</li>
+          </ol>
+        </nav>
+      </h4>
+
+      <hr />
+
+      <a href="#">
+        <button type="submit" class="btn kanbas-light-gray-bg float-end">
+          <i class="fa fa-ellipsis-vertical mt-1"></i>
+        </button>
+      </a>
+      <a href="#">
+        <button
+          type="submit"
+          class="btn kanbas-light-gray-bg float-end me-1 kanbas-save-profile btn-danger"
+        >
+          <i class="fa fa-plus mt-1 me-1"></i>
+          Module
+        </button>
+      </a>
+
+      <div class="dropdown float-end me-1">
+        <button
+          id="dropdown-1"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown" 
+        >
+          Publish All
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdown-1"> 
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+      <a href="#">
+        <button type="submit" class="btn kanbas-light-gray-bg float-end me-1">
+          View Progress
+        </button>
+      </a>
+
+      <br />
+      <br />
+
+      <ul class="list-group">
+        <li
+          class="list-group-item list-group-item-secondary kanbas-module-header-padding"
+        >
+          <div>
+            Week 0 - INTRO
+            <i class="fa fa-ellipsis-vertical float-end "></i>
+            <i class="fa fa-plus float-end"></i>
+            <i
+              class="fa fa-circle-check float-end  kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        <li class="list-group-item kanbas-module-padding">
+          <div>
+            LEARNING OBJECTIVES
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        <li class="list-group-item kanbas-module-padding">
+          <div class="ms-5">
+            Introduction to the course
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        
+        <li class="list-group-item kanbas-module-padding">
+          <div class="ms-5">
+            Full Stack Developer - Chapter 2 - Creating User Interfaces With
+            HTML
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        <li class="list-group-item kanbas-module-padding">
+          <div>
+            SLIDES
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        <li class="list-group-item kanbas-module-padding">
+          <i class="fa fa-link kanbas-gray float-start pt-1 ps-2"></i>
+          <div class="ms-5">
+            <a
+              href="https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit#slide=id.g40a3481019_0_0"
+              class="kanbas-hyperlink"
+            >
+              Introduction to Web Development
+              <i class="fa fa-arrow-up-right-from-square kanbas-red ps-1"></i>
+            </a>
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        <li class="list-group-item kanbas-module-padding">
+          <i class="fa fa-link kanbas-gray float-start pt-1 ps-2"></i>
+          <div class="ms-5">
+            <a
+              href="https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit#slide=id.p"
+              class="kanbas-hyperlink"
+            >
+              Creating an HTTP server with Node.js
+              <i class="fa fa-arrow-up-right-from-square kanbas-red ps-1"></i>
+            </a>
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        <li class="list-group-item kanbas-module-padding">
+          <i class="fa fa-link kanbas-gray float-start pt-1 ps-2"></i>
+          <div class="ms-5">
+            <a
+              href="https://docs.google.com/presentation/d/10B3jLiJ8-HMsA6TPq9JuWfJzsvX9SFnYVuhthrQbFwU/edit#slide=id.p"
+              class="kanbas-hyperlink"
+            >
+              Creating a React Application
+              <i class="fa fa-arrow-up-right-from-square kanbas-red ps-1"></i>
+            </a>
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+      </ul>
+
+      <br />
+
+      <ul class="list-group">
+        <li
+          class="list-group-item list-group-item-secondary kanbas-module-header-padding"
+        >
+          <div>
+            Week 1 - HTML
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i class="fa fa-plus float-end mt-1 me-3"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        <li class="list-group-item kanbas-module-padding">
+          <div>
+            LEARNING OBJECTIVES
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+        </li>
+        <li class="list-group-item kanbas-module-padding">
+          <div class="ms-5">
+            Learn how to create user interfaces with HTML
+            <i class="fa fa-ellipsis-vertical float-end mt-1"></i>
+            <i
+              class="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+          </div>
+      </ul>
+    </div>
+
+    <!-- COURSE STATUS COLUMN -->
+    <div class="kanbas-column">
+      <div>Course Status</div>
+
+      <a href="#" class="kanbas-no-underline">
+        <button type="submit" class="btn kanbas-light-gray-bg">
+          <i class="fa fa-ban"></i>
+          Unpublish
+        </button>
+      </a>
+
+      <a href="#" class="kanbas-no-underline">
+        <button type="submit" class="btn btn-success">
+          <i class="fa-solid fa-circle-check kanbas-white"></i>
+          Published
+        </button>
+      </a>
+
+      <br />
+      <br />
+
+      <a href="#" class="kanbas-no-underline">
+        <button
+          type="submit"
+          class="btn kanbas-light-gray-bg mt-1 mb-1 kanbas-item-width-250"
+        >
+          <div class="kanbas-text-left">
+            <i class="fa fa-file-import"></i>
+            Import Existing Content
+          </div>
+        </button>
+      </a>
+
+      <br />
+
+      <a href="#" class="kanbas-no-underline">
+        <button
+          type="submit"
+          class="btn kanbas-light-gray-bg mt-1 mb-1 kanbas-item-width-250"
+        >
+          <div class="kanbas-text-left">
+            <i class="fa fa-file-import"></i>
+            Import From Commons
+          </div>
+        </button>
+      </a>
+
+      <br />
+
+      <a href="#" class="kanbas-no-underline">
+        <button
+          type="submit"
+          class="btn kanbas-light-gray-bg mt-1 mb-1 kanbas-item-width-250"
+        >
+          <div class="kanbas-text-left">
+            <i class="fa fa-crosshairs"></i>
+            Choose Home Page
+          </div>
+        </button>
+      </a>
+      <br />
+
+      <a href="#" class="kanbas-no-underline">
+        <button
+          type="submit"
+          class="btn kanbas-light-gray-bg mt-1 mb-1 kanbas-item-width-250"
+        >
+          <div class="kanbas-text-left">
+            <i class="fa fa-bell"></i>
+            View Course Notifications
+          </div>
+        </button>
+      </a>
+
+      <br />
+      <br />
+
+      <div>To-Do</div>
+
+      <hr />
+
+      <i class="fa-solid fa-circle-exclamation kanbas-red float-left"></i>
+      <a href="#" class="kanbas-hyperlink ps-1">Grade A1 - ENV + HTML</a>
+      <div class="ps-4">100 points</div>
+      <div class="ps-4">Sep 18 at 11:59pm</div>
+
+      <br />
+
+      <div>
+        <div class="float-start">Coming Up</div>
+        <div class="float-end">
+          <i class="fa-solid fa-calendar float-start mt-1 me-1"></i>
+          <a href="#" class="kanbas-hyperlink float-start">View Calendar</a>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+
+      <i class="fa-solid fa-calendar float-left"></i>
+      <a href="#" class="kanbas-hyperlink ps-1">Lecture</a>
+      <div class="ps-4">Sep 11 at 11:45am</div>
+
+      <br />
+
+      <i class="fa-solid fa-calendar float-left"></i>
+      <a href="#" class="kanbas-hyperlink ps-1">CS5610 06 SP23 Lecture</a>
+      <div class="ps-4">Sep 11 at 6pm</div>
+    </div>
+  </body>
+</html>

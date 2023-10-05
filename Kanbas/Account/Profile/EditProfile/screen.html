@@ -1,0 +1,202 @@
+<!-- @format -->
+
+<head>
+  <title>Account</title>
+  <link
+    href="../../../../vendors/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+  <link href="../../../index.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="list-group kanbas-sidebar kanbas-column">
+    <a class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+      <div class="kanbas-sidebar-text kanbas-sidebar-logo">
+        <img
+          src="https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-6-white.svg"
+          width="180px"
+        />
+      </div>
+    </a>
+    <a
+      href="../screen.html"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-user-circle kanbas-gray kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Account</div>
+    </a>
+    <a
+      href="../../../Dashboard/dashboard.html"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-clock kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Dashboard</div>
+    </a>
+    <a
+      href="../../../Courses/Home/screen.html"
+      class="list-group-item kanbas-sidebar-selected kanbas-icon-padding"
+    >
+      <i class="fa fa-book kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Courses</div>
+    </a>
+    <a
+      href="#"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-calendar-plus kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Calendar</div>
+    </a>
+    <a
+      href="#"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-stopwatch kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">History</div>
+    </a>
+    <a
+      href="#"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-question-circle kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Help</div>
+    </a>
+  </div>
+
+  <!-- ACCOUNT NAVIGATION COLUMN -->
+  <div class="list-group kanbas-account kanbas-column">
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+      <div>Notifications</div>
+    </a>
+    <a
+      href="../screen.html"
+      class="list-group-item kanbas-black kanbas-account-border"
+    >
+      <div class="kanbas-account-selected">Profile</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+      <div>Files</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+      <div>Settings</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+      <div>ePortfolios</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+      <div>Shared Content</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+      <div>The Hub</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+      <div>Quickly Course Tools</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+      <div>Global Announcements</div>
+    </a>
+  </div>
+
+  <!-- editing profile -->
+
+  <div class="kanbas-column">
+    <h2>Liming Huang's Profile</h2>
+
+    <hr />
+    <br />
+
+    <i class="fa fa-user kanbas-gray kanbas-account-icon"></i>
+    <a href="../screen.html">
+      <button type="submit" class="btn kanbas-light-gray-bg float-end">
+        <i class="fa fa-pencil-alt kanbas-gray"></i>
+        Cancel Editing
+      </button>
+    </a>
+
+    <br />
+    <br />
+
+    <h6>Name*:</h6>
+    <input
+      id="input-username"
+      class="form-control kanbas-item-width-400"
+      value="Liming Huang"
+    />
+
+    <br />
+
+    <h6>Pronouns:</h6>
+    <select class="form-select kanbas-item-width-200">
+      <option value="NONE">None</option>
+      <option value="HE-HIM">he/him</option>
+      <option value="SHE-HER">she/her</option>
+      <option value="THEY-THEM">they/them</option>
+      <option value="OTHER">Other</option>
+    </select>
+
+    <br />
+
+    <h6>Title:</h6>
+    <input id="input-title" class="form-control kanbas-item-width-400" />
+
+    <br />
+
+    <h2>Contact</h2>
+    <div>
+      No registered services, you can add some on the
+      <a href="#" class="kanbas-hyperlink">settings</a>
+      page.
+    </div>
+
+    <br />
+
+    <h2>Biography</h2>
+    <div>
+      <textarea class="form-control" rows="5">
+Student, Computer Science
+        </textarea
+      >
+    </div>
+
+    <br />
+
+    <h2>Links</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col kanbas-center-heading">
+          <h4>Title</h4>
+        </div>
+        <div class="col kanbas-center-heading">
+          <h4>URL</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input id="input-title" class="form-control" value="YouTube" />
+        </div>
+        <div class="col">
+          <input id="input-url" class="form-control" value="" />
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn kanbas-light-gray-bg">
+      Add another link
+    </button>
+
+    <hr />
+
+    <a href="profile.html" class="kanbas-no-underline">
+      <button type="submit" class="btn kanbas-light-gray-bg">Cancel</button>
+    </a>
+    <a href="profile.html" class="kanbas-no-underline">
+      <button type="submit" class="btn kanbas-save-profile">
+        Save Profile
+      </button>
+    </a>
+  </div>
+</body>

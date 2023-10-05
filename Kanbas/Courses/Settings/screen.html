@@ -1,0 +1,121 @@
+<!-- @format -->
+
+<table border="1" width="100%">
+  <tr>
+    <td valign="top">
+      <ul>
+        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Inbox</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Studio</a></li>
+        <li><a href="#">Commons</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </td>
+    <td valign="top">
+      <ul>
+        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+        <li><a href="#">Piazza</a></li>
+        <li><a href="#">Zoom Meetings</a></li>
+        <li>
+          <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+        </li>
+        <li><a href="#">Quizzes</a></li>
+        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Panopto Video</a></li>
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">Rubrics</a></li>
+        <li><a href="#">Outcomes</a></li>
+        <li><a href="#">Collaborations</a></li>
+        <li><a href="#">Syllabus</a></li>
+        <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+      </ul>
+    </td>
+    <td>
+      <div class="tab">
+        <a href=" " class="tab-link" onclick="showTab('tab1')"
+          >Course Details</a
+        >
+        <a href="#" class="tab-link" onclick="showTab('tab2')">Sections</a>
+        <a href="#" class="tab-link" onclick="showTab('tab3')">Navigation</a>
+        <a href="#" class="tab-link" onclick="showTab('tab4')">Apps</a>
+        <a href="#" class="tab-link" onclick="showTab('tab5')"
+          >Feature Options</a
+        >
+        <a href="#" class="tab-link" onclick="showTab('tab6')">Integrations</a>
+      </div>
+
+      <input id="tab1" class="tabcontent">
+        <h3>Course Details</h3>
+        Images: <input type="file" />
+        <br />
+        Time Zone:
+        <select>
+          <option>Eastern Time</option>
+          <option>Pacific Time</option>
+        </select>
+        <br />
+        Participation:<select>
+          <option>Term</option>
+          <option>Academic Year</option>
+        </select>
+        <br />
+
+        Start
+        <br />
+        <input type="date" />
+        <br />
+        End
+        <br />
+        <input type="date" />
+        <br />
+        Large Course:
+        <input
+          type="checkbox"
+          name="NAME2">Launch SpeedGRader Filtered by Student Group</input>
+        <br>
+        Description:
+        <br>
+        <input type="textarea">
+      </div>
+
+      <div id="tab2" class="tabcontent">
+        <h3>Navigation</h3>
+        <table>
+          <tr>
+            <th>Home</th>
+          </tr>
+          <tr>
+            <th>Modules</th>
+          </tr> 
+          <tr>
+            <th>Piazza</th>
+          </tr>
+          <tr>
+            <th>Zoom Meetings</th>
+          </tr>
+          <tr>
+            <th>Assignment</th>
+          </tr>
+          <tr>
+            <th>Quizzes</th>
+          </tr>
+          <tr>
+            <th>Grades</th>
+          </tr>
+          <tr>
+            <th>People</th>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>

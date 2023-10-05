@@ -1,0 +1,390 @@
+<!-- @format -->
+<!-- @format -->
+
+<!DOC./AssignmentEditor/edit.html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Courses</title>
+    <link
+      href="../../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../../index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- KANBAS NAVIGATION COLUMN -->
+    <div class="list-group kanbas-sidebar kanbas-column">
+      <a class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <div class="kanbas-sidebar-text kanbas-sidebar-logo">
+          <img
+            src="https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-6-white.svg"
+            width="180px"
+          />
+        </div>
+      </a>
+      <a
+      href="../../Account/Profile/sc./AssignmentEditor/edit.html"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-user-circle kanbas-gray kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Account</div>
+    </a>
+      <a
+        href="../../Dashboard/dashb./AssignmentEditor/edit.html"
+        class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+      >
+        <i class="fa fa-clock kanbas-red kanbas-sidebar-logo"></i><br />
+        <div class="kanbas-sidebar-text">Dashboard</div>
+      </a>
+      <a
+        href="../../Courses/Home/sc./AssignmentEditor/edit.html"
+        class="list-group-item kanbas-sidebar-selected kanbas-icon-padding"
+      >
+        <i class="fa fa-book kanbas-red kanbas-sidebar-logo"></i><br />
+        <div class="kanbas-sidebar-text">Courses</div>
+      </a>
+      <a
+        href="#"
+        class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+      >
+        <i class="fa fa-calendar-plus kanbas-red kanbas-sidebar-logo"></i><br />
+        <div class="kanbas-sidebar-text">Calendar</div>
+      </a>
+      <a
+        href="#"
+        class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+      >
+        <i class="fa fa-stopwatch kanbas-red kanbas-sidebar-logo"></i><br />
+        <div class="kanbas-sidebar-text">History</div>
+      </a>
+      <a
+      href="#"
+      class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding"
+    >
+      <i class="fa fa-question-circle kanbas-red kanbas-sidebar-logo"></i><br />
+      <div class="kanbas-sidebar-text">Help</div>
+    </a>
+    </div>
+
+    <!-- COURSE NAVIGATION COLUMN -->
+    <div class="list-group kanbas-account kanbas-column">
+      <a
+        href="../Home/sc./AssignmentEditor/edit.html"
+        class="list-group-item kanbas-black kanbas-account-border"
+      >
+        <div class="kanbas-account-selected">Home</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Modules</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Piazza</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Zoom Meetings</div>
+      </a>
+      <a
+        href="../Assignments/sc./AssignmentEditor/edit.html"
+        class="list-group-item kanbas-red kanbas-account-border"
+      >
+        <div>Assignments</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Quizzes</div>
+      </a>
+      <a
+        href="../Grades/i./AssignmentEditor/edit.html"
+        class="list-group-item kanbas-red kanbas-account-border"
+      >
+        <div>Grades</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>People</div>
+      </a>
+      <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Settings</div>
+      </a>
+    </div>
+
+    <!-- ASSIGNMENT COLUMN -->
+    <div class="kanbas-column">
+      <h4>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" class="kanbas-hyperlink">CS5610</a>
+            </li>
+            <li class="breadcrumb-item active">Assignment</li>
+          </ol>
+        </nav>
+      </h4>
+
+      <hr />
+
+      <input
+        class="form-control kanbas-item-width-200 float-start"
+        placeholder="Search for Assignment"
+      />
+
+      <a href="#">
+        <button type="submit" class="btn kanbas-light-gray-bg float-end">
+          <i class="fa fa-ellipsis-v mt-1"></i>
+        </button>
+      </a>
+      <a href="#">
+        <button
+          type="submit"
+          class="btn kanbas-light-gray-bg float-end me-1 kanbas-save-profile btn-danger"
+        >
+          <i class="fa fa-minus"></i>
+          Assignment
+        </button>
+      </a>
+      <a href="#">
+        <button type="submit" class="btn kanbas-light-gray-bg float-end me-1">
+          <i class="fa fa-plus"></i>
+          Group
+        </button>
+      </a>
+
+      <br />
+      <br />
+
+      <ul class="list-group">
+        <li
+          class="list-group-item list-group-item-secondary kanbas-module-header-padding"
+        >
+          <div>
+            <b>Assignments</b>
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i class="fa fa-plus float-end mt-1 me-3"></i>
+            <div
+              class="border border-dark rounded-pill float-end me-3 kanbas-assignment-total"
+            >
+              40% of Total
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                A1 - ENV+HTML
+              </a>
+            </h5>
+            <br />
+            <div class="float-start">
+              Week 0 - Monday September 5th (9/5/2023)
+            Due Sep 18, 2023 at 11:59pm | 100 pts</div>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                A2 - CSS+BOOTSTRAP
+              </a>
+            </h5>
+            <br />
+            <div class="float-start">
+              Week 1 - Monday September 12th (9/12/2023)
+            Due Sep 25, 2023 at 11:59pm | 100 pts
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                A3 - JS+REACT
+              </a>
+            </h5>
+            <br />
+            <div class="float-start">
+              Week 2 - Monday September 19th (9/19/2023)
+            Due Oct 2, 2023 at 11:59pm | 100 pts</div>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                A4 - STATE+REDUX
+              </a>
+            </h5>
+            <br />
+            <div class="float-start">
+              Week 3 - Monday September 26th (9/26/2023)
+            Due Oct 10, 2023 at 11:59pm | 100 pts</div>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                A5 - NODE+SESSION
+              </a>
+            </h5>
+            <br />
+            <div class="float-start">
+              Week 4 - Monday October 3rd (10/3/2023)
+            Due Oct 16, 2023 at 11:59pm | 100 pts</div>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                A6 - MONGO
+              </a>
+            </h5>
+            <br />
+            <div>
+              Week 5 - Monday October 10th (10/10/2023)
+            Due Oct 23, 2023 at 11:59pm | 100 pts</div>
+          </div>
+        </li>
+      </ul>
+
+      <br />
+
+      <ul class="list-group">
+        <li
+          class="list-group-item list-group-item-secondary kanbas-module-header-padding"
+        >
+          <div>
+            <b>Quizzes</b>
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i class="fa fa-plus float-end mt-1 me-3"></i>
+            <div
+              class="border border-dark rounded-pill float-end me-3 kanbas-assignment-total"
+            >
+              10% of Total
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                Q1 - HTML
+              </a>
+            </h5>
+            <br />
+            <div >
+              Week 0 - SETUP - Week starting on Monday September 5th (9/5/2023)Due Sep 18, 2023 at 11:59pm | 100 pts</div>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                Q2 - CSS
+              </a>
+            </h5>
+            <br />
+            <div >
+            Week 1 - HTML - Week starting on Monday September 12th (9/12/2023)Due Sep 25, 2023 at 11:59pm | 100 pts</div>
+          </div>
+        </li>
+      </ul>
+
+      <br />
+
+      <ul class="list-group">
+        <li
+          class="list-group-item list-group-item-secondary kanbas-module-header-padding"
+        >
+          <div>
+            <b>Project</b>
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i class="fa fa-plus float-end mt-1 me-3"></i>
+            <div
+              class="border border-dark rounded-pill float-end me-3 kanbas-assignment-total"
+            >
+              30% of Total
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item kanbas-module-padding kanbas-assignment-border"
+        >
+          <div class="ms-5">
+            <i class="fa fa-ellipsis-v float-end mt-1"></i>
+            <i
+              class="fa fa-check-circle float-end mt-1 me-3 kanbas-green ps-5"
+            ></i>
+            <h5 class="float-start mt-1 mb-1">
+              <a href="./AssignmentEditor/edit.html" class="kanbas-no-underline kanbas-black">
+                Project
+              </a>
+            </h5>
+            <br />
+            
+              Week 5 - React & Routing - Week starting Monday October 10th
+              (10/10/2023)
+           
+            <br />
+            Due Dec 23, 2023 at 11:59pm | 100 pts</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </bod./AssignmentEditor/edit.html>
