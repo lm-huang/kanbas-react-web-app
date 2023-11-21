@@ -13,9 +13,11 @@ function Courses({ courses }) {
   const course = courses.find((course) => course._id === courseId);
   return (
     <div>
-      <h1 className="mt-3 ms-3">
-        {course.number} {course.name}
-      </h1>
+      {course && (
+        <h1 className="mt-3 ms-3">
+          {course.number} {course.name}
+        </h1>
+      )}
       <CourseNavigation />
       <div>
         <div

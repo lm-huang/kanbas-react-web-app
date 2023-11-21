@@ -1,16 +1,21 @@
 /** @format */
 
+// import {Link} from "react-router-dom";
+// import Nav from '../Nav';
+import React from "react";
 import KanbasNavigation from "./KanbasNavigation";
-import { Route, Routes, Navigate } from "react-router";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
-import db from "./Database";
-import { useState } from "react";
+// import db from "./Database";
+import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
+import axios from "axios";
 
 function Kanbas() {
-  const [courses, setCourses] = useState(db.courses);
+  const [courses, setCourses] = useState([]);
+  const URL = "http://localhost:4000/api/courses";
 
   const [course, setCourse] = useState({
     name: "New Course",
@@ -19,26 +24,60 @@ function Kanbas() {
     endDate: "2023-12-15",
   });
 
-  const addNewCourse = () => {
-    const randomId = Math.floor(10000 + Math.random() * 90000);
-    setCourses([...courses, { ...course, _id: randomId }]);
+  const findAllCourses = async () => {
+    const response = await axios.get(URL);
+    setCourses(response.data);
   };
 
-  const deleteCourse = (courseId) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
+  const addNewCourse = async () => {
+    const response = await axios.post(URL, course);
+    setCourses([response.data, ...courses]);
+    // setCourse({ name: "" });
   };
 
-  const updateCourse = () => {
-    setCourses(
-      courses.map((c) => {
-        if (c._id === course._id) {
-          return course;
-        } else {
+  const deleteCourse = async (courseID) => {
+    await axios.delete(`${URL}/${courseID}`).then((response) => {
+      setCourses(courses.filter((c) => c._id !== courseID));
+    });
+  };
+
+  const updateCourse = async () => {
+    await axios.put(`${URL}/${course._id}`, course).then((response) => {
+      setCourses(
+        courses.map((c) => {
+          if (c._id === course._id) {
+            return course;
+          }
           return c;
-        }
-      })
-    );
+        })
+      );
+    });
   };
+
+  useEffect(() => {
+    findAllCourses();
+  });
+
+  // const addNewCourse = () => {
+  //   const randomId = Math.floor(10000 + Math.random() * 90000);
+  //   setCourses([...courses, { ...course, _id: randomId }]);
+  // };
+
+  // const deleteCourse = (courseId) => {
+  //   setCourses(courses.filter((course) => course._id !== courseId));
+  // };
+
+  // const updateCourse = () => {
+  //   setCourses(
+  //     courses.map((c) => {
+  //       if (c._id === course._id) {
+  //         return course;
+  //       } else {
+  //         return c;
+  //       }
+  //     })
+  //   );
+  // };
   return (
     <Provider store={store}>
       <div className="d-flex">
