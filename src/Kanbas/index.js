@@ -1,13 +1,10 @@
 /** @format */
 
-// import {Link} from "react-router-dom";
-// import Nav from '../Nav';
 import React from "react";
 import KanbasNavigation from "./KanbasNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
-// import db from "./Database";
 import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
@@ -15,7 +12,8 @@ import axios from "axios";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
-  const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
 
   const [course, setCourse] = useState({
     name: "New Course",
