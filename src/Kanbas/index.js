@@ -9,11 +9,14 @@ import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Signin from "./users/signin";
+import Account from "./users/account";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
   const API_BASE = process.env.REACT_APP_API_BASE;
   const URL = `${API_BASE}/courses`;
+  console.log(API_BASE);
 
   const [course, setCourse] = useState({
     name: "New Course",
